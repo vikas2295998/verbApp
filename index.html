@@ -38,29 +38,32 @@
       
         
     <div class="container fs-sm">
-        <table id="verb-table">
+        <div class="table-responsive">
+        <table id="verb-table" class="table-striped table-bordered">
             <thead>
                 <tr>
                     <th>Verb</th>
                     <th>Meaning</th>
-                    <th>I Forms</th>
-                    <th>II Forms</th>
-                    <th>III Forms</th>
+                    <th>I Form</th>
+                    <th>II Form</th>
+                    <th>III Form</th>
                 </tr>
             </thead>
             <tbody id="verb-table-body"></tbody>
         </table>
+
+        </div>
         <div class="controls">
-            <div class="d-md-flex justify-content-between align-items-center">
+            <div class=" d-flex justify-content-between align-items-center">
             <label for="page-size">Page Size:</label>
-            <select class="w-25" id="page-size">
+            <select id="page-size">
                 <option value="5">5</option>
                 <option value="10" selected>10</option>
                 <option value="15">15</option>
             </select>
             
             <label for="page-number">Page Number:</label>
-            <select class="w-25" id="page-number"></select>
+            <select  id="page-number"></select>
         </div>
             <button id="prev-button">Previous</button>
             <button id="next-button">Next</button>

@@ -27,8 +27,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 600px;
-    overflow-x: scroll;
+    width:min(600px,90%);
+   
 }
 
 table {
@@ -71,6 +71,18 @@ button:disabled {
     background-color: #6c757d;
 }
 
+.d-flex select{
+    width: 30%;
+}
 
 
-
+@media screen and (max-width: 700px){
+    .d-flex{
+   
+        display: flex;
+        flex-direction: column;
+    }
+    .d-flex select{
+        width: 90%;
+    }
+}
