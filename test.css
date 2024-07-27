@@ -1,0 +1,32 @@
+/* test.css */
+
+body {
+    background-color: #f8f9fa;
+}
+
+/* .navbar {
+    border-bottom: 2px solid #007bff;
+} */
+.nav-link {
+    color: #007bff;
+}
+.nav-link:hover {
+    color: #0056b3;
+}
+
+
+#question-container {
+    margin-top: 20px;
+}
+
+#options-container label {
+    margin-right: 15px;
+}
+
+#feedback {
+    color: #dc3545;
+}
+
+#results-container {
+    margin-top: 20px;
+}
