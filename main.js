@@ -94,7 +94,7 @@ import verbs from './verbs.js';
           
           row.appendChild(verbCell);
           row.appendChild(meaningCell);
-          row.appendChild(baseCell);
+        //   row.appendChild(baseCell);
           row.appendChild(pastCell);
           row.appendChild(pastParticipleCell);
           

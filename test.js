@@ -45,8 +45,9 @@ function startTest() {
 }
 
 function generateLevelVerbs() {
-    let start = (selectedLevel - 1) * 100;
-    let end = selectedLevel * 100;
+    let start = (selectedLevel - 1) * 50;
+    let end = selectedLevel * 50;
+    console.log(Object.keys(verbs).length);
     if(Object.keys(verbs).length<end){
         start=0;
         end=Object.keys(verbs).length;
@@ -65,7 +66,7 @@ function generateQuestions() {
     for (let i = 0; i < totalQuestions; i++) {
         const randomVerb = verbsArray[Math.floor(Math.random() * verbsArray.length)];
         const randomForm=Math.random() > 0.5 >0.5?'past':'pastParticiple';
-        const questionType = Math.random() > 0.5 ? 'meaning' : randomForm;
+        const questionType = Math.random() > 0.15 ? 'meaning' : randomForm;
         questions.push({ verb: randomVerb, type: questionType });
     }
 }
